@@ -4,7 +4,7 @@ Research is difficult.
 
 :title: Research is Difficult
 :tags: mitosis, experiments, research
-:category: blogs
+:category: Blog
 :summary: Intro to research engineering
 :date: 2024-05-28 12:06
 
