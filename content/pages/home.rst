@@ -2,18 +2,18 @@
 Me
 #######
 
-:title: Me
+:title: About Me
 
 .. image:: ../images/me.jpg
   :width: 200
   :alt: A picture of me, working for Volt
 
-Welcome to my website.
 I am a Ph.D. Candidate in Applied Mathematics at University of Washington.
 I study machine learning and stochastic processes with the aim to identify differential equations in physics, climate, and biology.
-In the past, I have built and contributed to open and closed-source software projects on maintenenance/obsolescence forecasting, underwater acoustic machine learning, and network interdiction.
+I maintain pysindy and contribute to other open-source software projects.
+In the past I've build ML tools for maintenenance/obsolescence forecasting, underwater acoustic detection and classification, and network interdiction.
 
-I used to serve in the Navy as a Surface Warfare Officer, deploying four times to the Western Pacific and Middle East.  I also enjoy skiing and global politics and play ice hockey for the Pheasants.
+I used to drive ships in the US Navy, deploying four times to the Western Pacific and Middle East.  I also enjoy skiing, history, and nerd snipes and play ice hockey for the Pheasants.
 
 Contact info:
 
