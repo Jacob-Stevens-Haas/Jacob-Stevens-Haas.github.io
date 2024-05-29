@@ -3,8 +3,27 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+
 jobs:
+  theme:
+    name: install theme
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        repository: "alexandrevicenzi/Flex"
+        ref: "v2.5.0"
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    - uses: actions/checkout@v4
+    - name: "install dependencies"
+      run: |
+        pip install -r requirements.txt
+        pelican-themes --install ./Flex
   deploy:
+    needs: theme
     uses: "getpelican/pelican/.github/workflows/github_pages.yml@master"
     permissions:
       contents: "read"

@@ -11,6 +11,8 @@ from pelicanconf import *
 SITEURL = "https://jakestevens-haas.com"
 RELATIVE_URLS = False
 
+THEME = "Flex"
+
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
