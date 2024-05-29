@@ -40,7 +40,8 @@ jobs:
           pelican \
             --settings "publishconf.py" \
             --extra-settings SITEURL='"${{ steps.pages.outputs.base_url }}"' \
-            --output "build"
+            --output "build" \
+            --verbose
       - name: Fix permissions
         run: |
           chmod -c -R +rX "build" | while read line; do
