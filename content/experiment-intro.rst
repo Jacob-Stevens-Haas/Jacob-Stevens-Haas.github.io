@@ -1,5 +1,5 @@
 ######################
-Research is difficult.
+Research is difficult
 ######################
 
 :title: Research is Difficult
