@@ -2,10 +2,10 @@
 Experimental Desiderata
 ############################################
 
-:title: Experimental Desiderata
+:title: Experimental Desiderata 1
 :tags: mitosis, experiments, research, glider
 :category: Blog
-:summary: Reproducibility isn't all..
+:summary: What experiments lack
 :date: 2025-05-29 12:06
 
 
@@ -102,3 +102,19 @@ Grad student hours are free, but `experimental apparati aren't <https://www.scie
 
     -- Francis Bacon, Novum Organon
 
+I have worked on about a half-dozen long-term projects between my PhD and
+data science consulting.
+I contend that the conclusions drawn in nearly all
+exceeded where honest skepticism would draw a line.
+As Francis Bacon tells us in *Novum Organon*, the canonical description
+of scientific method:
+we cannot both freely investigate and draw responsible conclusions.
+His solution was to use a rubric.
+He applied the rubric to the phenomenon of heat, e.g.
+Consider things associated with heat
+(friction, humidity, fire, gas expansion, ice melting)
+and consider which can occur without heat?  Can heat occur without some of those things?
+What does that tell us about the true nature of heat?
+
+The idea of a gestalt rubric for investigating anything was suitable for his
+time.  Let me propose a more mundane version of mechanical aid in the next article.
