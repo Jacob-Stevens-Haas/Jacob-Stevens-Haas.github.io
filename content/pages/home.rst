@@ -8,7 +8,7 @@ Me
   :width: 200
   :alt: A picture of me, working for Volt
 
-I am a Ph.D. Candidate in Applied Mathematics at University of Washington.
+I recently completed a Ph.D. in Applied Mathematics at University of Washington.
 I study machine learning and stochastic processes with the aim to identify differential equations from data in physics, climate, and biology.
 I maintain pysindy and contribute to other open-source software projects.
 In the past I've build ML tools for maintenenance/obsolescence forecasting, underwater acoustic detection and classification, and network interdiction.
