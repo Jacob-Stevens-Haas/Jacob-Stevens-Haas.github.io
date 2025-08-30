@@ -43,14 +43,17 @@ should be easy for a human to write, read, and spot errors.
 
 The n-trick pony
 ---------------------------------------
-I can reproduce your experiment, I can believe the results you present.
+If I can reproduce your experiment, I can believe the results you present.
 If I can run your experiment on different data, different parameters, or a different method,
 I can believe the conclusions you draw.
 As with reproducibility, **reusability** is a matter of both technical solutions and conventions.
 This hints at the challenges of defining a notebook as an experiment.
 While there are tools that can parametrize notebook runs (e.g. papermill),
 they don't do well with passing arbitrary objects as parameters.
-On the other hand, the problem of a defined but parametrized procedure is obviously functions.
+On the other hand, the problem of a parametrized procedure is obviously solved by importable functions.
+This does mean that the experiment can't run itself - it is a library item,
+and some sort of experiment-running application is needed.
+In an ideal world, the experiment would not depend upon the experiment runner (again, the distinction for later).
 
 Writing reusable experiments largely comes down to choosing to expose the parameters of interest
 and methods of comparison/metrics.
@@ -58,27 +61,38 @@ In lieu of a formal hypothesis for an investigation
 (which I argue isn't part of the experiment, but rather the investigation, but more on that distinction later),
 spcifying the metrics that matter and the parameters of interest goes a long way to
 achieving Francis Bacon's desired rubric.
-Thus, reusability is more a question of practice than technological solution.
-The only reservation to this is that, to be as reusable as possible,
-it's nice for the experiment to not depend upon the experiment runner (again, the distinction for later).
 
 
 Show *and* tell
 -------------------------------------
-**describable** 
-refers to a vernacular for its parameterization and a single source of truth
-for what that vernacular means.
-Mitosis contributes this by diligently checking all named variants against a database,
-with appropriate considerations for repeatable serialization.
-The dictionary definition of vernacular is a semi-declarative syntax, as shown in figure 5.2. This figure shows value of a declarative
-syntax: its simple to see what someone is experimenting on by reviewing the diff of named
-parameterizations. 
+We're not just running experiments; we're talking, and ideally writing about them.
+That means that experiments and parameters need to be **describable**.
+If an experiment accepts a simulation noise parameter, then we might want to talk
+conversationally about the high-noise case, a low-noise but correlated case, and a heavy-tailed case.
+Parameters have a name and a type such as ``float``, ``statsmodels.frozendistribution``, etc.
+To talk about experiments, however, arguments or groups of arguments should have names. 
+
+To jump to the point - a vernacular translation requires a dictionary.
+That dictionary must serve as a single source of truth against which an experiment is checked,
+so that all collaborators discussing the "low noise" case mean the same thing.
+There are different ways of achieving this, but they largely come down to
+whether you allow experimental parameters to be arbitrary code objects or restrict them
+to primitive types.
+
+Regardless of technical solutions, these definitions should all occur in the same location
+in a mostly declarative syntax.
+Adding a single named parameterization to a repository is a one-line diff,
+as compared with changing and rerunning a jupyter notebook.
 
 
-Sic parvum magnus
+Sic parvis magna
 -----------------------------------
-**composable**.
-
+The final desiderata I've identified is **composability**.
+An investigation may include a data preprocessing step, which results in its own metric
+for comparison, followed by a modeling/prediction step.
+Both steps may have their own metrics, and the best first-step on its own metric
+may not be the best in the composite method.
+A case in point is pysindy: (also differentiation/optimizer)
 Composability refers to the use of the experiment in some type of series.
 Methods like pysindy are often used not only for scientific discovery, but also in engineering
 systems like `SINDy-RL`_. Therefore, providing the option of composing the experiment's processing
@@ -88,17 +102,9 @@ obstacles to reusability due to dependencies.
 
 .. _SINDy-RL: https://github.com/nzolman/sindy-rl
 
-.. figure:: images/research-project.png
-    :alt: Organization of methods, experiments, investigation, and runner for research project.
 
-    A depiction of the project organization for the plumes project.
-    This consists of
-    a package to process plume videos into various reduced-order models,
-    a package to run experiments to evaluate different parameterizations
-    of those reduced order models,
-    a copy of \lstinline|mitosis|,
-    and a project that represents the investigations in the paper and presentation,
-    specifying the particular choices of parameters to investigate.
-    This layout was used for several hundred invocations of experiments
-    as we improved and debugged the experiments
-    and identified the best parameterizations.
+Final thoughts
+-------------------------
+This list of four is by no means exhaustive.
+There may be more qualities of excellent experiments that we can distill.
+What do you think?  Can you send me examples of great experiments?
