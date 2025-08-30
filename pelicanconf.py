@@ -8,9 +8,9 @@ SITELOGO = "/images/me.jpg"
 PATH = "content"
 
 MAIN_MENU = True
-MENUITEMS = (('Archives', '/archives.html'),
-             ('Categories', '/categories.html'),
-             ('Tags', '/tags.html'),)
+MENUITEMS = (('Archives', './archives.html'),
+             ('Categories', './categories.html'),
+             ('Tags', './tags.html'),)
 
 TIMEZONE = 'America/Los_Angeles'
 

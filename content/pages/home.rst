@@ -8,21 +8,17 @@ Me
   :width: 200
   :alt: A picture of me, working for Volt
 
-I recently completed a Ph.D. in Applied Mathematics at University of Washington.
-I study machine learning and stochastic processes with the aim to identify differential equations from data in physics, climate, and biology.
-I maintain pysindy and contribute to other open-source software projects.
-In the past I've build ML tools for maintenenance/obsolescence forecasting, underwater acoustic detection and classification, and network interdiction.
+I recently completed a Ph.D. in Applied Mathematics at University of Washington,
+where I studied machine learning for differential equations.
+I went a-rusticating for a few months, but now I'm back maintaining pysindy,
+contributing to other open-source software projects,
+and looking for work.
+In the past I've build ML tools for maintenenance/obsolescence forecasting,
+underwater acoustic detection and classification,
+and network interdiction.
 
-I used to drive ships in the US Navy, deploying four times to the Western Pacific and Middle East.  I also enjoy skiing, history, and nerd snipes and play ice hockey for the Pheasants.
+I used to drive ships in the US Navy,
+deploying four times to the Western Pacific and Middle East.
+I also enjoy skiing, history and playing ice hockey for the Pheasants and Narwhals in my local league.
 
-Contact info:
-
-email: jmsh@uw.edu
-
-snail:  
-
-| Jacob Stevens-Haas
-| Department of Applied Mathematics
-| University of Washington
-| Lewis Hall #201, Box 353925
-| Seattle, WA 98195-3925
+email: jacob.stevens.haas@gmail.com
