@@ -2,10 +2,10 @@
 More than just reproducibility
 ############################################
 
-:title: Experimental Desiderata 2
+:title: Experimental Thoughts 2: Desiderata
 :tags: mitosis, experiments, research
-:category: Blog
-:summary: What experiments should have
+:category: Experiments
+:summary: What can we ask of experiments in an ideal world?
 :date: 2025-05-29 12:06
 
 

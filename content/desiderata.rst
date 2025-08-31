@@ -1,11 +1,11 @@
 ############################################
-Experimental Desiderata
+Problems with my experiments
 ############################################
 
-:title: Experimental Desiderata 1
+:title: Experimental Thoughts 1: Trials (and tribulations)
 :tags: mitosis, experiments, research, glider
-:category: Blog
-:summary: What experiments lack
+:category: Experiments
+:summary: Struggles with experiments in data science and mathematics and a discussion of what they lack.
 :date: 2025-05-29 12:06
 
 
