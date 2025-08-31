@@ -88,23 +88,27 @@ as compared with changing and rerunning a jupyter notebook.
 Sic parvis magna
 -----------------------------------
 The final desiderata I've identified is **composability**.
-An investigation may include a data preprocessing step, which results in its own metric
-for comparison, followed by a modeling/prediction step.
-Both steps may have their own metrics, and the best first-step on its own metric
-may not be the best in the composite method.
-A case in point is pysindy: (also differentiation/optimizer)
 Composability refers to the use of the experiment in some type of series.
-Methods like pysindy are often used not only for scientific discovery, but also in engineering
+A case in point is pysindy, which traditionally begins with a derivative estimation step.
+This step itself can be evaluated for `accuracy and bias`_.
+But the choice of parameters that optimizes those objectives may not be the same
+as the choice which then leads to the best equation discovery
+(there are several different metrics for that, too).
+Finally, methods like pysindy are often used not only for scientific discovery, but also in engineering
 systems like `SINDy-RL`_. Therefore, providing the option of composing the experiment's processing
-with evaluation of a latter step helps make the experiment more useful to researchers. Similar to reusability, the definition of an experiment as a callable makes it composable as well.
-Since experiments in mitosis do not need to depend upon mitosis, the avoid any additional
-obstacles to reusability due to dependencies.
+with evaluation of a latter step helps make the experiment more useful to researchers.
 
+.. _accuracy and bias: https://ieeexplore.ieee.org/document/9241009
 .. _SINDy-RL: https://github.com/nzolman/sindy-rl
 
+Similar to reusability, the definition of an experiment as a callable makes it composable.
+However, for the callable to be useful in an experiment runner,
+there needs to be a convention that separates the relevant metrics from processed data.
 
 Final thoughts
 -------------------------
 This list of four is by no means exhaustive.
 There may be more qualities of excellent experiments that we can distill.
-What do you think?  Can you send me examples of great experiments?
+What do you think?  Do you have any examples of great experiments?
+In the final article of this series, I share my thoughts on the tool I wrote
+to fulfill these desiderata.
