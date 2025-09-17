@@ -6,7 +6,7 @@ Research is difficult
 :tags: mitosis, experiments, research
 :category: Thoughts
 :summary: Intro to research engineering
-:date: 2024-05-28 12:06
+:date: 2024-05-28
 
 It takes years of training and mentorship to understand an industry, learn
 what's important in a field, how to organize a team, how to plan and forecast

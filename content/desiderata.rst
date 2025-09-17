@@ -6,10 +6,12 @@ Problems with my experiments
 :tags: mitosis, experiments, research, glider
 :category: Thoughts
 :summary: Struggles with experiments in data science and mathematics
-:date: 2025-05-29 12:06
+:date: 2025-01-29
 
-I've hinted `before <experiment-api>`_ that I run experiments differently
+I've hinted `before`_ that I run experiments differently
 than my applied math colleagues.  Here's a bit of the rationale for that.
+
+.. _before: separation-of-concerns-in-research.html
 
 A song as old as time
 ---------------------------------

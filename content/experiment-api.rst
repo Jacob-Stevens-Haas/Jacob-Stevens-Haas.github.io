@@ -6,7 +6,7 @@ Separation of Concerns in Research
 :tags: mitosis, experiments, research
 :category: Thoughts
 :summary: Method != experiment != experiment runner
-:date: 2024-06-08 12:06
+:date: 2024-06-08
 
 The most important lesson I've learned in research engineering practice is
 separating the method and experiment API.
