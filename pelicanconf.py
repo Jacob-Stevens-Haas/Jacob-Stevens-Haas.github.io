@@ -25,8 +25,8 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("ext: mitosis", "https://pypi.org/project/mitosis/"),
-    ("ext: pysindy", "https://pysindy.readthedocs.io/en/latest/"),
+    ("mitosis", "https://pypi.org/project/mitosis/"),
+    ("pysindy", "https://pysindy.readthedocs.io/en/latest/"),
 )
 
 THEME = 'Flex'
