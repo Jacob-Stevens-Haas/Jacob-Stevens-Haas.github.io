@@ -29,7 +29,7 @@ In the world of software, **reproducibility** typically refers to the
 evironment,
 a set of operating-system variables and dependency versions.
 Given that software has users, the goal of reproducibility also implies
-a relatively simple invocation, e.g.
+simple use instructions, e.g.
 "run all cells" or "copy and paste on command line".
 After all, as a `witty guide to technical project management`_ emphasizes,
 “If the process takes any more than one step, it is prone to errors.”

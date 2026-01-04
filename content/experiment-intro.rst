@@ -1,6 +1,6 @@
-######################
-Research is difficult
-######################
+#######################
+How does research work?
+#######################
 
 :title: Research is Difficult
 :tags: mitosis, experiments, research
