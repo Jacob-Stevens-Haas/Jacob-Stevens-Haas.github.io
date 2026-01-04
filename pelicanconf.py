@@ -10,7 +10,8 @@ PATH = "content"
 MAIN_MENU = True
 MENUITEMS = (('Archives', './archives.html'),
              ('Categories', './categories.html'),
-             ('Tags', './tags.html'),)
+             ('Tags', './tags.html'),
+             ('Resume', './pages/resume.html'),)
 
 TIMEZONE = 'America/Los_Angeles'
 
